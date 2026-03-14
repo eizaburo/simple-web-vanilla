@@ -62,7 +62,7 @@ button.addEventListener("click", async (e) => {
 })
 
 // titleを入力した際の処理
-title.addEventListener("keyup", (e) => {
+title.addEventListener("keyup", () => {
     if (!regex_title.test(title.value)) {
         error_message_title.classList.add("show");
     } else {
@@ -71,7 +71,7 @@ title.addEventListener("keyup", (e) => {
 });
 
 // emailを入力した際の処理
-email.addEventListener("keyup", (e) => {
+email.addEventListener("keyup", () => {
     if (!regex_email.test(email.value)) {
         error_message_email.classList.add("show");
     } else {
@@ -80,7 +80,7 @@ email.addEventListener("keyup", (e) => {
 });
 
 // messageを入力した際の処理
-message.addEventListener("keyup", (e) => {
+message.addEventListener("keyup", () => {
     if (!regex_message.test(message.value)) {
         error_message_message.classList.add("show");
     } else {
