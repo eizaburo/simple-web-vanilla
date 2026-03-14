@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body部 */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* main部 */
+main {
+    flex: 1;
+}
+
+/* header部 */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    list-style: none;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+header a:hover {
+    color: #aaa;
+}
+
+/* ヒーローエリア部 */
+.hero {
+    background-color: #aaa;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.hero p {
+    color: #fff;
+}
+
+/* サービス部 */
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.service {
+    background-color: #aaa;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service h2 {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.service p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* footer部 */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* スマホ対応 */
+@media(max-width:700px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .service {
+        height: 100px;
+        width: 80%;
+    }
+}
+
+/* contact.html向けの記述 */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 50px auto;
+    gap: 10px;
+}
+
+.contact-form input,
+form textarea {
+    padding: 6px;
+}
+
+.contact-form button {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.error-message {
+    font-size: 0.8rem;
+    color: #f00;
+    display: none;
+}
+
+.error-message.show{
+    display: block;
+}

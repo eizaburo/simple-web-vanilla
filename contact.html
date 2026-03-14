@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple-web-vanilla - Contact</title>
+    <!-- style.css読み込み -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        header
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" style="height: 120px;">
+            <h1>お問合せフォーム</h1>
+            <p>お気軽にお問合せ下さい</p>
+        </section>
+        <section>
+            <form class="contact-form">
+
+                <label for="title">お問合せタイトル</label>
+                <input type="text" id="title">
+                <p class="error-message" id="error-message-title">お問合せタイトルを正しく入力して下さい</p>
+
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <p class="error-message" id="error-message-email">Emailを正しく入力して下さい</p>
+
+                <label for="message">お問合せ内容</label>
+                <textarea id="message" rows="5"></textarea>
+                <p class="error-message" id="error-message-message">お問合せ内容を正しく入力して下さい</p>
+
+                <button type="submit" id="button">問合せる</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        footer
+    </footer>
+    <!-- script.js読み込み -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
