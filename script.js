@@ -45,8 +45,25 @@ button.addEventListener("click", async (e) => {
         // sleep処理
         await new Promise(resolve => setTimeout(resolve, 2000));
 
+        // データをJSONに整形
+        const body = JSON.stringify({
+            title: title.value,
+            email: email.value,
+            message: message.value
+        });
+
+        // データをURLSearchParamsに整形（URLエンコード）
+        const body2 = new URLSearchParams({
+            title: title.value,
+            email: email.value,
+            message: message.value
+        }).toString();
+
+        // body2をコンソールに出力
+        console.log(body2);
+
         // 条件を満たしているときのみ実行
-        alert(`title=${title.value}, email=${email.value}, message=${message.value}`);
+        alert(body);
 
         // 値のリセット
         title.value = "";
