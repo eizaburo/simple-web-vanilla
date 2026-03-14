@@ -119,13 +119,18 @@ footer {
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 500px;
     margin: 50px auto;
     gap: 10px;
+    padding: 10px;
+}
+
+.contact-form label {
+    margin-top: 10px;
 }
 
 .contact-form input,
-form textarea {
+.contact-form textarea {
     padding: 6px;
 }
 
@@ -140,6 +145,6 @@ form textarea {
     display: none;
 }
 
-.error-message.show{
+.error-message.show {
     display: block;
 }

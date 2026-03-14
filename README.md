@@ -3,6 +3,8 @@
 素のHTML、CSS、JavaScriptのみでシンプルに作ったWebUIのサンプル。
 いろいろな学習のベースとなるサンプルとして利用する想定のものです。
 
+>動くものを[Github Pagesで公開](https://eizaburo.github.io/simple-web-vanilla/)しています。
+
 ## ブランチ
 
 いくつかのブランチがあります。
@@ -25,7 +27,7 @@
 サーバ側機能を含まないので、リポジトリをcloneして、HTMLファイルを開くだけです。
 
 ```bash
-git clone <ブランチURL>
+git clone https://github.com/eizaburo/simple-web-vanilla.git
 cd simple-web-vanilla
 open index.html
 ```
