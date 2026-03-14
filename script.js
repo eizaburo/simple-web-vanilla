@@ -17,7 +17,7 @@ const regex_message = /^.{1,20}$/;
 
 // ボタンクリックイベントを定義
 button.addEventListener("click", async (e) => {
-    // おまじない
+    // おまじない（ページリロードをキャンセル）
     e.preventDefault();
 
     // ボタンの表示変更
