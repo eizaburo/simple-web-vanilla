@@ -64,6 +64,11 @@ contact_button.addEventListener("click", async (e) => {
             const json = await result.json();
             alert(json.message); // レスポンスのJSONにmessageというkeyがある前提（API側で実装）
 
+            // 通信成功時は値をリセット
+            title.value = "";
+            email.value = "";
+            message.value = "";
+
         } catch (error) {
             alert(`サーバの反応がありません。:${error.message}`);
         }
