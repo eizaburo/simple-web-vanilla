@@ -33,7 +33,3 @@ open index.html
 ```
 
 >ダブルクリックでindex.htmlを開いてもOKです。
-
-## ライセンス
-
-MIT License
