@@ -70,7 +70,7 @@ contact_button.addEventListener("click", async (e) => {
             message.value = "";
 
         } catch (error) {
-            alert(`サーバの反応がありません。:${error.message}`);
+            alert(`サーバと通信できませんでした。:${error.message}`);
         }
 
     }
