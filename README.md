@@ -11,14 +11,16 @@
 
 - 環境
   - macOS
+    - 特に依存要素は無いが、作成環境がmacOS
+  - Chrome
+    - ブラウザ非依存ですが、確認はChromeのみで実施
   - Node.jsがインストール済み
     - 実装には関係ないが、動作確認に利用
 
 
 ## 利用方法
 
-クライアント技術のみで構築されているので、リポジトリをcloneしてHTMLファイルを開くだけ。
-但し、予期せぬエラーを防ぐためにはWebサーバ経由での実行がベター。
+クライアント技術のみで構築されているので、リポジトリをcloneしてHTMLファイルを開くだけです。
 
 ```bash
 git clone https://github.com/eizaburo/simple-web-vanilla.git
