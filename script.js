@@ -47,7 +47,7 @@ contact_button.addEventListener("click", async (e) => {
         // alert(`title=${title.value}, email=${email.value}, message=${message.value}`);
 
         // APIとの通信処理
-        const api_url = "http://localhost:3000/contacts";
+        const api_url = "http://localhost:3333/contacts";
         try {
             const result = await fetch(api_url, {
                 method: "POST",
